@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Meeting Minutes</title>
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/x-icon" href="media/favicon.ico">
+    </head>
+
+    <body>
+        <header>
+            <h1>First Meeting</h1>
+            <h2>Introductions and Getting to Know Each Other</h2>
+            <h3>April 16, 2023</h3>
+        </header>
+
+        <main>
+            <!-- links to each section -->
+            <nav class="menu">
+                <ol>
+                    <li><a href="#attendees_section">Attendees</a></li>
+                    <li><a href="#agenda_section">Agenda</a></li>
+                    <li><a href="#questions_section">Questions</a></li>
+                    <li><a href="#media_section">Media</a></li>
+                    <li><a href="#survey_section">Survey</a></li>
+                </ol>
+            </nav>
+
+
+            <h3 id="attendees_section">Attendees</h3>
+            <ul>
+                <li>Alex</li>
+                <li>Jennifer</li>
+                <li>Sophia</li>
+                <li>Angelia</li>
+                <li>Thanh</li>
+                <li>Harish</li>
+                <li>Hunter</li>
+                <li>Seonghun</li>
+                <li>Vincent</li>
+                <li>Chang</li>
+            </ul>
+    
+            <h3 id="agenda_section">Agenda</h3>
+            <section>
+                <h4>Introduction</h4>
+                <p>
+                    Briefly went over the topics we will cover in this meeting. 
+                </p>
+            </section>
+
+            <hr>
+            
+            <section>
+                <h4>Icebreaker</h4>
+                <p>
+                    <span>
+                        Went around the room saying (1) name, (2) year, (3) college, and (4) hobbies.
+                        
+                        <br>
+
+                        Looks like we all play videogames.<br>
+                        Will probably make our group bonding meeting on some mutual game or find a new one.
+                    </span>
+                </p>
+            </section>
+
+            <hr> 
+
+            <section>
+                <h4>Unfinished from last meeting</h4>
+                <p>
+                    None, no previous meeting :)
+                </p>
+            </section>
+
+            <hr>
+
+            <section>
+                <h4>New business</h4>
+                <p>
+                    <b>To do: </b>Must schedule <em>group kickoff</em> and <em>bonding event</em>. <br>
+                    <b>Roles revealed:</b> <br>
+                    - <i>Alex and Jennifer</i>: Leads <br>
+                    - <i>Sophia</i> Designer <br>
+                    - <i>Seonghun</i>: Planner <br>
+                    <b>Group kickoff meeting: </b> discuss <em>branding, video, contract</em> assignments due Friday.<br>
+                    <b>Mini project</b> starting Tuesday. Will be able to discuss in person during lecture more. <br>
+                </p>
+            </section>        
+
+            <hr>
+
+            <h3 id="questions_section">Questions, comments, concerns?</h3>
+            <p>
+                When should we meet for kickoff meeting? <strong>let's use when2meet</strong> <br>
+            </p>
+
+            <h3 id="media_section">Media</h3>
+            <h4>Notes / Visual Aids</h4>
+            <img src="media/diagram.png" alt="Diagram of our team's future steps.">
+
+            <h4>Audio</h4>
+            <audio controls>
+                <source src="media/meetingAudio.m4a" type="audio/mp4">
+            </audio>
+            
+            <h4>Video</h4>
+            <video controls>
+                <source src="media/meetingVideo.mp4" type="video/mp4">
+            </video>
+
+
+            <!-- survey form at bottom of page -->
+            <h3 id="survey_section">Survey</h3>
+            <form id="bottomform">
+                <!-- first name field -->
+                <div class="first-name">
+                    <label for="fname">First name:</label><br>
+                    <input list="firstlist" id="fname" form="bottomform">
+                    <datalist id="firstlist">
+                        <option value="Alex"></option>
+                        <option value="Jennifer"></option>
+                        <option value="Sophia"></option>
+                        <option value="Angelia"></option>
+                        <option value="Thanh"></option>
+                        <option value="Harish"></option>
+                        <option value="Hunter"></option>
+                        <option value="Seonghun"></option>
+                        <option value="Vincent"></option>
+                        <option value="Chang"></option>
+                    </datalist>
+                </div>
+
+                <!-- last name field -->
+                <div class="last-name">
+                    <label for="lname">Last name:</label><br>
+                    <input list="lastlist" id="lname" form="bottomform">
+                    <datalist id="lastlist">
+                        <option value="Li"></option>
+                        <option value="Yu"></option>
+                        <option value="Zhang"></option>
+                        <option value="Nguyen"></option>
+                        <option value="Vasanth"></option>
+                        <option value="Trieu"></option>
+                        <option value="Oh"></option>
+                        <option value="Vo"></option>
+                        <option value="Shu"></option>
+                    </datalist>
+                </div>
+
+                <!-- selection -->
+                <br>
+                <label for="role">Select your role:</label>
+                <select name="rolelist" id="role" form="bottomform">
+                    <option value="default">Choose your role!</option>
+                    <option value="lead">Lead</option>
+                    <option value="dev">Developer</option>
+                    <option value="design">Designer</option>
+                    <option value="plan">Planner</option>
+                </select>
+
+                <!-- checkbox -->
+                <br><br>
+                <fieldset>
+                    <legend>Did you attend this meeting?</legend>
+                    <input type="checkbox" id="check" name="attend">
+                    <label for="check">Yes!!!</label>
+                </fieldset>
+
+                <!-- comments section -->
+                <br>
+                <label for="comments">Any comments?</label><br>
+                <textarea id="comments" rows="4" cols="60" form="bottomform"></textarea>
+
+                <!-- submit button -->
+                <br>
+                <button form="bottomform">Submit</button>
+
+            </form>
+
+            <br><br>
+
+            <!-- details + summary-->
+            <h4>Here's a quick joke</h4>
+            <details>
+                <summary>What's a DJ's favorite sauce?</summary>
+                <p>Mari-na-ra</p>
+            </details>
+
+            <br>
+        </main>
+
+
+        <footer>This page was based off Team 11's intro meeting with Gagan!</footer>
+    </body>
+
+</html>
