@@ -1,9 +1,12 @@
-html {
+* {
     font-family: 'Anuphan', sans-serif;
 }
 
 .box1 {
     background-color: blanchedalmond;
+
+    height: 80vh;
+    width: fit-content;
 
     border-style: dashed;
     border-color: dimgray;
@@ -11,13 +14,15 @@ html {
     border-radius: 1%;
 
     margin-top: 50px;
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 1cm;
+    margin-right: 1cm;
 
     padding-top: 15px;
     padding-right: 30px;
     padding-bottom: 15px;
     padding-left: 30px;
+
+    position: static;
 
     text-align: justify;
 }
@@ -26,19 +31,26 @@ html {
     background-color: lightcyan;
     border: 2px dotted dimgray;
 
-    margin: 50px 30px 50px 30px;
+    margin: 2cm 1cm 2cm 1cm;
 
-    padding: 5px 30px 5px 30px;
+    max-height: fit-content;
+    max-width: fit-content;
+
+    padding: 1mm 5mm 1mm 5mm;
+
+    position: static;
 
     text-align: justify;
 }
 
 .emphasize {
     color: green;
+    font-size: 1em;
 }
 
 span {
     color: red;
+    font-size: 1.25em;
     text-decoration: underline;
 }
 
@@ -50,8 +62,25 @@ button:active {
     border: 3px solid black;
 }
 
+.container {
+    height: fit-content;
+    width: fit-content;
+}
+
+.media-box {
+    height: 300px;
+    width: 500px;
+}
+
+img, #video {
+    height: 100%;
+    width: 100%;
+
+    position: relative;
+}
+
 @media screen {
     video:hover {
-        border: 5px solid black;
+        border: 1em solid black;
     }
 }
