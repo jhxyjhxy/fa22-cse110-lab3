@@ -1,3 +1,7 @@
+html {
+    font-family: 'Anuphan', sans-serif;
+}
+
 .box1 {
     background-color: blanchedalmond;
 
@@ -36,4 +40,18 @@
 span {
     color: red;
     text-decoration: underline;
+}
+
+button:hover {
+    color: darkgray;
+}
+
+button:active {
+    border: 3px solid black;
+}
+
+@media screen {
+    video:hover {
+        border: 5px solid black;
+    }
 }
