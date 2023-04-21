@@ -1,36 +1,44 @@
+/* set third party font */
 * {
     font-family: 'Anuphan', sans-serif;
 }
 
+/* decorate page title heading */ 
 header > h1 {
     text-align: center;
     text-decoration: underline;
 }
 
+/* decorate page title subheading */
 header > h2 {
     text-align: center;
 }
 
+/* inline block display for the section links */
 ol > li {
     display: inline-block;
 }
 
+/* color each section link */
 a[href^="#"] {
-    color: hsl(43,89%,38%);
+    color: hsl(43,89%,38%); /* darkgoldenrod in (hue, sat, light) value */
 }
 
+/* block display for attendees list */
 ul li {
     display: block;
 }
 
+/* container for agenda and questions boxes */
 .bcontainer {
     width: 100%;
 
+    /* parent grid display */
     display: grid;
     align-content: space-evenly;
-
 }
 
+/* container for agenda box */
 div.box1 {
     background-color: blanchedalmond;
 
@@ -55,14 +63,17 @@ div.box1 {
 
     text-align: justify;
 
+    /* child grid */
     align-self: start;
     place-self: center;
 }
 
+/* color answer text to brown */
 h4 ~ p {
     color: brown;
 }
 
+/* container for questions box */
 div.box2 {
     background-color: lightcyan;
     border: 2px dotted dimgray;
@@ -78,62 +89,73 @@ div.box2 {
 
     text-align: justify;
 
+    /* child grid */
     align-self: end;
     justify-self: center;
 }
 
+/* emphasize this section */
 .emphasize {
     color: rgb(0,128,0);
     font-size: 1em;
 }
 
+/* add emphasis to due dates */
 span {
     color: rgb(128,0,0);
     font-size: 1.25em;
     text-decoration: underline;
 }
 
-button:hover {
-    color: darkgray;
-}
-
-button:active {
-    border: 3px solid #000000;
-}
-
-.container {
+/* this is sizing the container holding the media-box's */
+h3 + div {
     height: fit-content;
     width: fit-content;
+}
 
+/* container for media section */
+.container {
+    /* flexbox display */
     display: flex;
     align-items: baseline;
     flex-flow: row wrap;
     justify-content: space-between;
 }
 
+/* sections of each media type */
 .media-box {
+    margin: 20px;
+
+    /* child flexbox properties */
     flex-basis: auto;
     flex-grow: 2;
     flex-shrink: 3;
-    align-self: auto;
-
-    margin: 30px;
+    align-items: center;
 }
 
-h3 + div {
-    height: 300px;
-    width: 500px;
-}
-
+/* styling for image and video parts of the media section */
 img, #video {
     height: 50%;
     width: 75%;
 
+    align-self: center;
+    justify-content: center;
     position: relative;
 }
 
+/* media query */
 @media screen {
     video:hover {
-        border: 1em solid #000000;
+        border: 1em solid #000000; /* border around video when hovering over video */
     }
+}
+
+/* changes color of button when hovering */
+button:hover {
+    color: darkgray;
+}
+
+/* border appears around button once clicked */
+button:active {
+    border: 3px solid #000000;
 }
