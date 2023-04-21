@@ -12,7 +12,7 @@ header > h2 {
 }
 
 a[href^="#"] {
-    color: darkgoldenrod;
+    color: hsl(43,89%,38%);
 }
 
 ul li {
@@ -65,12 +65,12 @@ h4 ~ p {
 }
 
 .emphasize {
-    color: green;
+    color: rgb(0,128,0);
     font-size: 1em;
 }
 
 span {
-    color: red;
+    color: rgb(128,0,0);
     font-size: 1.25em;
     text-decoration: underline;
 }
@@ -80,7 +80,7 @@ button:hover {
 }
 
 button:active {
-    border: 3px solid black;
+    border: 3px solid #000000;
 }
 
 .container {
@@ -102,6 +102,6 @@ img, #video {
 
 @media screen {
     video:hover {
-        border: 1em solid black;
+        border: 1em solid #000000;
     }
 }
