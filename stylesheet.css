@@ -2,10 +2,27 @@
     font-family: 'Anuphan', sans-serif;
 }
 
-.box1 {
+header > h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+header > h2 {
+    text-align: center;
+}
+
+a[href^="#"] {
+    color: darkgoldenrod;
+}
+
+ul li {
+    list-style-type: disc;
+}
+
+div.box1 {
     background-color: blanchedalmond;
 
-    height: 80vh;
+    height: 90vh;
     width: fit-content;
 
     border-style: dashed;
@@ -25,6 +42,10 @@
     position: static;
 
     text-align: justify;
+}
+
+h4 ~ p {
+    color: brown;
 }
 
 .box2 {
@@ -67,7 +88,7 @@ button:active {
     width: fit-content;
 }
 
-.media-box {
+h3 + div {
     height: 300px;
     width: 500px;
 }
